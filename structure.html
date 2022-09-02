@@ -1,0 +1,82 @@
+<!-- Ici nous sommes en commentaire de documentation  -->
+
+
+<!DOCTYPE html> <!-- voici la structure de base d'un document html, on indique au navigateur que le document est de type html -->
+<html lang="fr"> <!--  on indique au navigateur que la langue est française principalement pour le référencement (les données scannées par nos moteurs de recherche afin de renvoyer un jeu de résultat lors d'une recherche). cette donnée de langue est posée en attribut de l'unique balise ouvrante  html.
+ -->
+<head> <!-- la balise head permet aux moteurs de recherche d'adapter leur comportement et de même de générer un classement en référencement naturel -->
+    <meta charset="UTF-8"> <!-- ici nous avons des balises de métadescription, pour le type de caractère utilisé ( charset) pour la compatibilité avec les navigateurs ( content ) et pour la taille d'affichage ( viewport) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure Html</title> <!-- ici le titre de la page qui sera affiché dans l'onglet de notre navigateur -->
+</head>
+<body>
+<!--  ici commence l'affichage  -->
+<h1>Ma première page html</h1> <!--  les balise de h1 à h6 sont des balises de titre h1 devant être unique dans une page et étant le titre principal jusqu'à h6 la plus petite balise de titre -->
+<h2>h2</h2>
+<h6>h6</h6>
+<!-- une page web doit contenir un header, lui même contenant une barre de navigation ( nav ). Suivi d'une section ou un main et terminé par un bas de page (footer). Tout cela à l'intérieur du bloc body -->
+<header>
+    contenu du header 
+<nav>
+    barre de navigation
+</nav>
+
+</header><!--  haut de page -->
+<main>
+Le corps de la page
+<section> Bloc rassemblant d'autres blocs, titres, formulaires... en liens avec un contenu similaire
+<div> sorte de bloc universel, peut importe le contenu, généralement utiliser pour permettre d'organiser nos pages ou les styliser </div>
+<article>
+    zone de contenu de texte
+</article>
+<p>paragraphe de texte </p>
+<span>zone de texte qui s'adapte au contenu</span>
+<span>zone de texte qui s'adapte au contenu</span> <!-- balise dite inline, n'as pas de display block, tout se met à la suite  -->
+
+<details> 
+    <summary>Menu deroulant de Pays</summary>
+    <ul><!--  ul pour unorder list -->
+        <li>France</li>
+        <li>Italie</li>
+        <li>Espagne</li>
+    </ul>
+    <ol><!--  ol pour order list -->
+        <li>France</li>
+        <li>Italie</li>
+        <li>Espagne</li>
+    </ol>
+    <dl><!--  dl pour definition list -->
+        <dt>France</dt><!-- definition terme-->
+        <dd>Italie</dd><!-- pour definition description -->
+        <dd>Espagne</dd>
+    </dl>
+</details>
+<fieldset>
+    <legend>La légende</legend>
+    <p>du texte ....</p>
+</fieldset>
+  
+<figure>
+    <img width="300" src="logo.jpg" alt="un elephant" title="un elephant">
+    <figcaption>
+        <h3>Un elephant</h3>
+    </figcaption>
+</figure>
+
+</section>
+
+
+</main>
+<footer>
+
+    Le bas de page, pour les mentions légales, le copyright, les contact etc....
+
+</footer>
+    
+</body>
+</html> <!-- ici nous avons la balise fermante de notre page html elle se définit par l'ajout de / après l'ouverture de chevron < 
+
+    html, head et body sont des balises unique dans une page html. Tout code à l'exterieur de la balise body ne sera pas interprété par les navigateurs
+
+-->

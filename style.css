@@ -1,0 +1,78 @@
+/*   # pour appeler un id, . pour appeller une classe, le nom de la balise pour appeler une balise  */
+
+.a{
+
+    width: 40%;
+    height: 20vh;
+    border: black 2px solid;
+    background-color: yellow;
+    margin: 3px
+
+}
+
+.b{
+
+    width: 40%;
+    height: 20vh;
+    border: black 2px solid;
+    background-color: yellow;
+    margin: 3px;
+
+}
+
+.container{
+
+    width: 99%;
+    display: flex;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: aqua;
+
+}
+.container1{
+
+    padding: 50px;
+    background-color: aqua;
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.orange{
+   color: orange;
+   position: absolute;
+   top: 40vh;
+   left: 40vw;
+   height: 20vh;
+   width: 20vw;
+   background-color: aqua;
+}
+
+p{
+
+    margin: 0;
+}
+
+.hello{
+
+    color: red ;
+    position: relative;
+    top:1px;
+    left: 30px;
+}
+
+#zone{
+
+    border: 2px purple solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: lightcoral;
+}
+
+.contenu{
+    margin-top: 60px;
+}

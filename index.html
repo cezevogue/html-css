@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+ <!-- pour déclarer du css dans une page html, généralement en haut de page afin qu'il soit lu en premier par le navigateur  -->
+    <style>
+    h1{
+        color: rgba(79, 79, 231, 15); /* color pour modifier la couleur des caractères (possibilité par son nom anglais, rgb=> red green blue , rgba=> avec opacité)  */
+        text-align: center;
+        border: 3px solid purple;/*  borrder pour définir un contour de block   */
+        background-color: rgba(206, 219, 13, 0.384); /*  background pour appliquer un fond à un bloc  */
+        width: 50%;
+        margin: 13px auto;/*  margin pour appliquer des marges sur un bloc ou bien 1 critère=>même marge partout, 2 critères=> le 1er les marges haut et bas, le second les marges gauche et droite. Ou bien 4 critères=> 1er=haut, 2nd=droite, 3eme=bas, 4eme=gauche. on a aussi margin-top, margin-left, margin-right, margin-bottom   */
+        border-radius: 10%; /*   pour appliquer un arrondi sur un bloc   */ 
+        padding: 30px;
+    }
+    main{
+     background-color: pink;
+     width: 90%;
+     margin: 0 auto 0 auto;
+     min-height: 90vh; /*  90% de la hauteur de votre écran    */ 
+     padding-top: 20px;
+        
+        
+    
+    }
+
+    span{
+
+        font-size: 30px;
+
+    }
+
+    .span1{
+      
+        font-size: 70px;
+        
+    }
+
+    #span2{
+
+        font-size: 120px;
+    }
+    h2{
+        color: green;
+    }
+
+    div h2{ /*  ici je cible tout les h2 se trouvant à l'interieur d'une div   */
+
+        color: brown;
+    }
+    section .section div h2{
+
+        color: aqua;
+    }
+
+
+
+
+
+    </style>
+
+
+    <a href="structure.html"> Voir structure.html </a>
+    <a href="zoning.html">Voir zoning.html</a>
+    <!-- ancre de page, liens vers une autre page se comporte comme le span, fait la taille du contenu (display inline) -->
+
+    <main>
+
+        <h1>Mais comment styliser ma page?</h1>
+
+        <span>span</span>
+         <span class="span1"   >span 1</span><!-- ici on ajoute une classe span1 à notre balise span, en l'appelant préfixée d'un . dans le style css, celle ci sera plus forte que le style de la balise. Une classe peut être appelée sur une balise autant de fois que voulu -->
+        <span id="span2" class="span1"  >span 2</span> <!-- ici on ajoute un attribut id à la balise span que l'on appel précédé d'un # dans le style css, celui-c- est plus fort que le style de la classe mais ne peut être appelé une seule fois dans une page -->
+
+        <section class="section">
+        <div>
+            <h2>1er H2</h2>
+        </div>
+        </section>
+       
+            <h2>3eme H2</h2>
+        </div>
+            <h2>2nd H2</h2>
+
+
+    </main>
+    <!-- <main>
+
+        <h1>Mais comment styliser ma page?</h1>
+
+    </main> -->
+</body>
+
+</html>
